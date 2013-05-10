@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController
+@interface HelloWorldViewController : UIViewController<UINavigationBarDelegate,UIImagePickerControllerDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *imageview;
+- (IBAction)Takephoto:(id)sender;
+
+- (IBAction)Selectphoto:(id)sender;
 
 @end
